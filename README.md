@@ -1,4 +1,4 @@
-# Credit Card Default Prediction
+# Credit Card Default Forecast
 
 Нейросетевое приложение для прогнозирования риска дефолта по кредитным картам.
 
@@ -10,7 +10,7 @@ credit_default_project/
 │   ├── main.py          # FastAPI приложение
 │   └── static/
 │       └── index.html   # Веб-интерфейс
-├── model/               # Сюда положить файлы модели
+├── model/               # Обученная нейронная модель
 │   ├── credit_default_model.keras
 │   ├── scaler.pkl
 │   └── feature_names.json
