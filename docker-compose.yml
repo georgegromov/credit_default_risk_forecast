@@ -1,0 +1,13 @@
+services:
+  credit-default-api:
+    image: credit-default-api:latest
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./model:/model
+    environment:
+      - MODEL_PATH=/model/credit_default_model.keras
+      - SCALER_PATH=/model/scaler.pkl
+      - FEATURES_PATH=/model/feature_names.json
+    restart: unless-stopped
